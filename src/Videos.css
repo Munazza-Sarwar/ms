@@ -1,0 +1,128 @@
+.gallery{
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.gallery .main-video-container{
+    flex: 1 1 700px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #0099C8;
+    padding: 15px;
+}
+
+.gallery .main-video-container .main-video{
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.gallery .main-video-container .main-video-title{
+    font-size: 20px;
+    color: white;
+}
+
+.gallery .video-list-container{
+    flex: 1 1 300px;
+    height: 455px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #0099C8;
+    padding: 15px;
+}
+
+.gallery .video-list-container::-webkit-scrollbar{
+    width: 10px;
+}
+
+.gallery .video-list-container::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.gallery .video-list-container::-webkit-scrollbar-thumb{
+    background-color: #d1d0d0;
+    border-radius: 5px;
+}
+
+.gallery .video-list-container .list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 5px #0099C8 solid;
+}
+
+.gallery .video-list-container .list:last-child{
+    margin-bottom: 0;
+}
+
+.gallery .video-list-container .list.active{
+    background-color: #1F319B;
+}
+
+.gallery .video-list-container .list.active .list-title{
+    color: white;
+}
+
+.gallery .video-list-container .list .video-list{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.gallery .video-list-container .list .list-title{
+    font-size: 17px;
+    color: #1F319B;
+    text-align: left;
+}
+
+
+
+@media (max-width:1200px) {
+    .gallery{
+        margin: 0;
+    }
+    .video-list-container{
+        border: none !important;
+        padding: 15px !important;
+    }
+}
+
+@media (max-width:450px) {
+    .video-list-container{
+        border: none !important;
+        padding: 15px !important;
+    }
+
+    .gallery .main-video-container .main-video-title{
+        font-size: 15px;
+        text-align: center
+    }
+
+    .gallery .video-list-container .list{
+        flex-flow: column;
+        gap: 10px;
+    }
+
+    .gallery .video-list-container .list .video-list{
+        width: 100%;
+    }
+
+    .gallery .video-list-container .list .list-title{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+

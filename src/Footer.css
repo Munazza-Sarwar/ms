@@ -1,0 +1,27 @@
+.footers{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+  
+.footers h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+  
+.icons .fa{
+    color: #1F319B;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+  
+.fa-heart-o{
+    color: #1F319B;
+}
+
+.last-line{
+    color: #1F319B;
+}
+  

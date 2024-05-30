@@ -1,0 +1,30 @@
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+
+}
+
+.about-col h1{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #1F319B;
+    background: transparent;
+    color: #1F319B;
+}
+
+.red-btn:hover{
+    color: white;
+}

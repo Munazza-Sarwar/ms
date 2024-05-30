@@ -1,0 +1,195 @@
+
+.reviews{
+    margin: auto;
+    width: 50vw;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reviews h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.total-rating{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #C7FCEB;
+    align-items: center;
+}
+
+.total-rating .number-ratings{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-rating .bar-ratings{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.total-rating .bar-ratings .bar-ratings-rows{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.total-rating .bar-ratings .bar-ratings-rows .stars-and-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    gap: 5px;
+}
+
+.total-rating .bar-ratings .bar-ratings-rows .stars-and-bar .fa{
+    color: #00CDA7;
+}
+
+.total-rating .bar-ratings .bar-ratings-rows .stars-and-bar .stars{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.total-rating .bar-ratings .bar-ratings-rows .stars-and-bar .bars{
+    width: 20vw;
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.total-rating .bar-ratings .bar-ratings-rows .bars .star-bar{
+    display: block;
+    position: absolute;
+    background-color: #00CDA7;
+    padding: 1%;
+    border-radius: 15px;
+    border: none;
+    height:12px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.comments-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.comments-col .question-commments{
+    flex-basis: 70%;
+    border-radius: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+.comments-col .question-commments p{
+    padding: 0;
+}
+
+.comments-col .question-commments img{
+    width: 80%;
+}
+
+.comments-col .question-commments h3{
+    margin-right: 15px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.comments-col .fa{
+    color: #00CDA7;
+}
+
+.comments-col .question-commments button{
+    background: transparent;
+    color: #00CDA7;
+    border: none;
+}
+
+.comments-col .question-commments button:hover{
+    color: #1F319B;
+}
+
+
+/* -------------------------- */
+.questions{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.questions img{
+    width: 80%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #007BCC;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #007BCC;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-top: none;
+}
+
+@media (max-width:700px) {
+    .questions img{
+        width: 100%;
+    }
+    .comments-col .question-commments img{
+        width: 100%;
+    }
+}
